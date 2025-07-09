@@ -83,22 +83,39 @@
 }
 
 .banner-container {
-  width: 1140px;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .banner {
+  z-index: 1000;
+  width: 100%;
   margin-top: 45px;
   height: 450px;
   background: url(../img/banner/banner_1.jpg) center center/cover no-repeat;
+  display: flex;
+  justify-content: start;
+  overflow: hidden;
+  padding: 0 40px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .banner-text {
-  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
-  font-size: 60px;
+  font-size: 62px;
   margin-left: 100px;
   letter-spacing: 1px;
   padding-top: 15px;
+  justify-content: flex-start;
 }
 
 .pink {
